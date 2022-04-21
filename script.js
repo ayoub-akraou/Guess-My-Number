@@ -8,7 +8,7 @@ let instruction = document.querySelector(".instruction");
 let score = document.querySelector(".score");
 let highscore = document.querySelector(".highscore");
 let check = document.querySelector(".check");
-let correctNumber = Math.trunc(Math.random() * 21);
+let correctNumber = Math.trunc(Math.random() * 20 + 1);
 
 let scoreValue = document.querySelector(".score--value");
 let highscoreValue = document.querySelector(".highscore--value");
@@ -41,7 +41,7 @@ again.addEventListener("click", function (e) {
   e.preventDefault();
   document.body.style.backgroundColor = "#222";
   number.textContent = "?";
-  correctNumber = Math.trunc(Math.random() * 21);
+  correctNumber = Math.trunc(Math.random() * 20 + 1);
   console.log(correctNumber);
   instruction.textContent = "Start guessing ...";
   insert.value = "";
